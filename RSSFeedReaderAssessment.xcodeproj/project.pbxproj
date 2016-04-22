@@ -15,6 +15,7 @@
 		2A063E5B1CC83E2C002E806F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A063E591CC83E2C002E806F /* LaunchScreen.storyboard */; };
 		2A063E661CC83E2C002E806F /* RSSFeedReaderAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A063E651CC83E2C002E806F /* RSSFeedReaderAssessmentTests.m */; };
 		2A063E711CC83E2C002E806F /* RSSFeedReaderAssessmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A063E701CC83E2C002E806F /* RSSFeedReaderAssessmentUITests.m */; };
+		2AC6F0F01CC91F32004CC575 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6F0EF1CC91F32004CC575 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2A063E6C1CC83E2C002E806F /* RSSFeedReaderAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSFeedReaderAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A063E701CC83E2C002E806F /* RSSFeedReaderAssessmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSFeedReaderAssessmentUITests.m; sourceTree = "<group>"; };
 		2A063E721CC83E2C002E806F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC6F0EE1CC91F32004CC575 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2AC6F0EF1CC91F32004CC575 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +104,15 @@
 		2A063E4A1CC83E2C002E806F /* RSSFeedReaderAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				2A063E821CC84F82002E806F /* Model */,
+				2A063E7E1CC84F26002E806F /* Views */,
 				2A063E4E1CC83E2C002E806F /* AppDelegate.h */,
 				2A063E4F1CC83E2C002E806F /* AppDelegate.m */,
 				2A063E511CC83E2C002E806F /* ViewController.h */,
 				2A063E521CC83E2C002E806F /* ViewController.m */,
 				2A063E541CC83E2C002E806F /* Main.storyboard */,
+				2AC6F0EE1CC91F32004CC575 /* DetailViewController.h */,
+				2AC6F0EF1CC91F32004CC575 /* DetailViewController.m */,
 				2A063E571CC83E2C002E806F /* Assets.xcassets */,
 				2A063E591CC83E2C002E806F /* LaunchScreen.storyboard */,
 				2A063E5C1CC83E2C002E806F /* Info.plist */,
@@ -138,6 +145,20 @@
 				2A063E721CC83E2C002E806F /* Info.plist */,
 			);
 			path = RSSFeedReaderAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		2A063E7E1CC84F26002E806F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2A063E821CC84F82002E806F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC6F0F01CC91F32004CC575 /* DetailViewController.m in Sources */,
 				2A063E531CC83E2C002E806F /* ViewController.m in Sources */,
 				2A063E501CC83E2C002E806F /* AppDelegate.m in Sources */,
 				2A063E4D1CC83E2C002E806F /* main.m in Sources */,
@@ -496,6 +518,7 @@
 				2A063E771CC83E2C002E806F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A063E781CC83E2C002E806F /* Build configuration list for PBXNativeTarget "RSSFeedReaderAssessmentTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +527,7 @@
 				2A063E7A1CC83E2C002E806F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A063E7B1CC83E2C002E806F /* Build configuration list for PBXNativeTarget "RSSFeedReaderAssessmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +536,7 @@
 				2A063E7D1CC83E2C002E806F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
